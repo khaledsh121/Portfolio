@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    font-family: cairo;
+}
+
+
+
+h1{
+    font-size: 2.5em;
+    color: white;
+}
+
+
+.nav-a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#nav_list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+    height: 70px;
+    justify-content: end;
+    align-items: center;
+    background-color: #EB4A4A;
+    z-index: 99999999;
+}
+
+.nav_element{
+    margin-right: 5%;
+    width: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.push{
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.khaled{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_element{
+        font-size: 15px;
+    }
+.khaled{
+    display: none;
+}
+}
+
+
+#intro{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/intro_background.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+#intro h1{
+    margin-bottom: 20px;
+    width: auto;
+    font-size: 2.5em;
+    cursor: default;
+    animation: move-element 1s;
+}
+  @keyframes move-element {
+    from {
+      transform: translatey(-700%);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+
+
+.change_color{
+    color:#eb4a4a ;
+}
+
+section{
+    margin-top: 40px;
+}
+
+#skills >h1{
+    margin-left: 20px;
+}
+
+hr{
+    margin: 20px;
+    border-color: #ac0707;
+}
+
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    width: 25%;
+    padding: 40px;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.icons:hover{
+    scale: 1.05;
+    background-color: white;
+    box-shadow: 3px 3px 1px #eb4a4a ;
+    color: #000;
+}
+
+.skills_svg{
+    width: 200px;
+    height: 200px;
+}
+
+.icons h1{
+    color: #eb4a4a;
+    text-align: center;
+    margin: 0;
+}
+
+.icons p{
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+    .skills_container{
+    flex-wrap: wrap;
+    }
+}
+
+#education > h1{
+    margin-left: 20px;
+}
+
+#education li{
+    color: white;
+    margin-left: 80px;
+    font-size: 1.3em;
+}
+
+#Why_join_GSG > h1{
+    margin-left: 20px;
+}
+
+#Why_join_GSG p{
+    color: white;
+    margin-left: 55px;
+    margin-right: 80px;
+    font-size: 1.3em;
+}
+
+
+#links > h1{
+    margin-left: 20px;
+}
+#links a{
+    margin-left: 55px;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+#links a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+#contact{
+    background-color: #000;
+}
+
+.footer_ul{
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_li{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.footer_img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer_li label{
+    margin-left: 5px;
+    color: white;
+}
